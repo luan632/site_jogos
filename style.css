@@ -1,5 +1,5 @@
 :root{
-    --main-color: blue;
+    --main-color: #d3ad7f;
     --black: #13131a;
     --bg: #010103;
     --border: 0.1rem solid rgba(255,255,255,0.3);
@@ -154,7 +154,46 @@ section{
     height: auto; 
 }
 
-.box img {
+.Jogos .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+}
+
+.Jogos .box-container .box {
+    text-align: center;
+    border: var(--main-color);
+    padding: 5rem ;
+    cursor: pointer;
+}
+
+.Jogos .box-container .box img {
+    height: 10rem;
     max-width: 100px;
-    height: auto; 
+}
+
+.Jogos .box-container .box h3 {
+    color: #fff;
+    font-size: 2rem;
+    padding: 1rem 0;
+}
+
+.Jogos .box-container .box .price {
+    color: #fff;
+    font-size: 2.5rem;
+    padding: 0,5rem 0;
+}
+
+.Jogos .box-container .box .price span {
+    font-size: 1.5rem;
+    text-decoration: line-through;
+    font-weight: lighter;
+}
+
+.Jogos .box-container .box:hover {
+    background: #fff;
+}
+
+Jogos .box-container .box:hover>* {
+    color: black;
 }
