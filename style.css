@@ -162,7 +162,7 @@ section{
 
 .Jogos .box-container .box {
     text-align: center;
-    border: var(--main-color);
+    border: var(--border);
     padding: 5rem ;
     cursor: pointer;
 }
@@ -194,6 +194,25 @@ section{
     background: #fff;
 }
 
-Jogos .box-container .box:hover>* {
-    color: black;
+.Jogos .box-container .box:hover>* {
+    color: var(--black);
+}
+
+.footer {
+    text-align: center;
+}
+
+.footer .share {
+    padding: 1rem 0;
+}
+
+.footer .share img {
+    margin: 0.3rem;
+    cursor: pointer;
+    border-radius: 50%;
+    padding: 1rem;
+}
+
+.footer .share img:hover {
+    background-color: blue;
 }
